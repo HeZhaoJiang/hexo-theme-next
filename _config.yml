@@ -509,7 +509,7 @@ math:
 
 # Easily enable fast Ajax navigation on your website.
 # For more information: https://github.com/next-theme/pjax
-pjax: false
+pjax: true
 
 # FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images.
 # For more information: https://fancyapps.com/fancybox
@@ -605,20 +605,21 @@ changyan:
 # Valine
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
-  enable: false
-  appId: # Your leancloud application appid
-  appKey: # Your leancloud application appkey
+  enable: true
+  appId: oVsz3ptudld7784mEB48TVJ5-gzGzoHsz
+  appKey: j2c9RsmaYmRXLhRBTXLS4NVE
   serverURLs: # When the custom domain name is enabled, fill it in here
-  placeholder: Just go go # Comment box placeholder
+  placeholder: д��������۰�... # Comment box placeholder
   avatar: mm # Gravatar style
   meta: [nick, mail, link] # Custom comment header
   pageSize: 10 # Pagination size
-  lang: # Language, available values: en, zh-cn
-  visitor: false # Article reading statistic
+  lang: zh-cn # Language, available values: en, zh-cn
+  visitor: true # Article reading statistic
   comment_count: true # If false, comment count will only be displayed in post page, not in home page
   recordIP: false # Whether to record the commenter IP
-  enableQQ: false # Whether to enable the Nickname box to automatically get QQ Nickname and QQ Avatar
-  requiredFields: [] # Set required fields: [nick] | [nick, mail]
+  enableQQ: true # Whether to enable the Nickname box to automatically get QQ Nickname and QQ Avatar
+  requiredFields: [nick] # Set required fields: [nick] | [nick, mail]
+
 
 # LiveRe comments system
 # You can get your uid from https://livere.com/insight/myCode (General web site)
@@ -838,6 +839,9 @@ canvas_ribbon:
   alpha: 0.6 # The transparency of the ribbon
   zIndex: -1 # The display level of the ribbon
 
+# darkmode.js
+darkmode_js: 
+  enable: false
 
 #! ==============================================================
 #! DO NOT EDIT THE FOLLOWING SETTINGS
@@ -933,6 +937,9 @@ vendors:
 
   # Canvas ribbon
   canvas_ribbon:
+  
+  # darkmode_js: https://cdn.jsdelivr.net/npm/darkmode-js/lib/darkmode-js.min.js
+  darkmode_js:
 
 # Assets
 css: css
