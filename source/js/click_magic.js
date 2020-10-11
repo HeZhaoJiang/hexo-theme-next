@@ -3,7 +3,7 @@ var a_idx = 0;
 jQuery(document).ready(function($) {
    $("body").click(function(e) {
        var a = new Array("Python", "Java", "Go", "C", "C++", "C#", "JavaScript" ,
-       "Php", "Sql", "R");
+       "Php", "Sql", "R", "Lua", "Perl");
        var $i = $("<span/>").text(a[a_idx]);
        a_idx = (a_idx + 1) % a.length;
        var x = e.pageX,
