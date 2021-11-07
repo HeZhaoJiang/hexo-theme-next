@@ -35,11 +35,15 @@
   }
 }
 
-.sidebar-panel {
-  display: none;
-  max-height: var(--sidebar-wrapper-height);
+// Need for Sidebar/TOC inner scrolling if content taller then viewport.
+.sidebar-panel-container {
+  flex: 1;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+.sidebar-panel {
+  display: none;
 }
 
 .sidebar-overview-active .site-overview-wrap {
