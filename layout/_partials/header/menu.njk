@@ -30,9 +30,9 @@
       </li>
     {%- endif %}
     
-    {%- if theme.background_music %}
+    {%- if theme.background_music.enable %}
       <div>
-        <iframe seamless frameborder="no" border="0" marginwidth="0" marginheight="0" width=288 height=52 src="//music.163.com/outchain/player?type=2&id={{ theme.background_music }}&auto=1&height=32"></iframe>
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=288 height=86 src="//music.163.com/outchain/player?type=2&id={{ theme.background_music.id }}&auto=1&height=66"></iframe>
       </div>
     {%- endif %} 
   </ul>
